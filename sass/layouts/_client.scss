@@ -1,6 +1,14 @@
+
+.client-section{
+    display: block;
+}
 .container-client {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+        }
  }
  .client-tetle {
      font-weight: 700;
@@ -12,18 +20,34 @@
      margin-bottom: 50px;
  }
  .client-list {
+    width: 100%;
+    height: 100%;
      display: flex;
      flex-wrap: wrap;
      gap: 30px;
      align-items: center;
  }
- .client-iten {        
+ .client-iten {   
+    @media screen and (min-width: 320px) {
+        width: calc((100% - 60px) / 2);
+        height: 92px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 90px) / 3);
+        height: 92px;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+        height: 92px;
+    }
      background-color: #FFFFFF;
 
  }
  .client-soc-link {
-         width: 170px;
-         height: 92px;
+         width: 100%;
+         height: 100%;
          border: 1px solid #AFB1B8;
          border-radius: 4px;
          background-color:#fff;
