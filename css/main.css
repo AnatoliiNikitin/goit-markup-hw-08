@@ -467,19 +467,19 @@ li {
 }
 @media screen and (min-width: 320px) {
   .client-iten {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     height: 92px;
   }
 }
 @media screen and (min-width: 768px) {
   .client-iten {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
     height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
   .client-iten {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 90px) / 6);
     height: 92px;
   }
 }
