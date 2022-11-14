@@ -1,6 +1,6 @@
 .container-client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
  }
  .client-tetle {
      font-weight: 700;
@@ -13,6 +13,7 @@
  }
  .client-list {
      display: flex;
+     flex-wrap: wrap;
      gap: 30px;
      align-items: center;
  }
