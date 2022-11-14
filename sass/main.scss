@@ -1,0 +1,17 @@
+@import './basse/reset';
+@import'./basse/conteiner';
+@import'./basse/root'; 
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/peculiarities';
+@import './layouts/work';
+@import './layouts/about';
+@import './layouts/client';
+@import './layouts/footer';
+@import './layouts/portfolio';
+@import './layouts/project';
+
+@import './modul/modul';
+
+@import './untils/hiden.scss';

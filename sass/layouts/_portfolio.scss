@@ -1,0 +1,42 @@
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list {
+    display: flex;
+    gap: 8px;
+  justify-content: center;
+  
+  
+}
+
+.list__iten {
+    margin-bottom: 50px;
+}
+
+.list__button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--top-color);
+    cursor: pointer;
+    background: #F5F4FA;
+border-radius: 4px;
+border: transparent;
+display: inline-block;
+padding: 6px 22px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus{
+    color: var(--hit-color);
+    background-color: #2196F3;
+}
+}
+.button-everyone {
+    padding: 6px 25px;
+}

@@ -1,0 +1,47 @@
+.container-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
+ .client-tetle {
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.6;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--top-color);
+     margin-bottom: 50px;
+ }
+ .client-list {
+     display: flex;
+     gap: 30px;
+     align-items: center;
+ }
+ .client-iten {        
+     background-color: #FFFFFF;
+
+ }
+ .client-soc-link {
+         width: 170px;
+         height: 92px;
+         border: 1px solid #AFB1B8;
+         border-radius: 4px;
+         background-color:#fff;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+         &:hover,
+         &:focus {
+         background-color: #fff;
+         border-color: #2196F3;
+}
+ }
+ .client-soc-icon {
+     fill: #AFB1B8;
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     .client-soc-link:hover &,
+     .client-soc-link:focus & {
+       fill: #2196F3;
+    } 
+ }
+ 

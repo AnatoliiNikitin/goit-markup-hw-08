@@ -1,0 +1,199 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ,
+visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ }
+ .modal {
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%) scale(1);
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ,
+visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.backdrop.is-hidden & {
+    transform: translate(50%, 50%) scale(0);
+ }
+ }
+ .modal-btn {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+ }
+ .modal-close-icon {
+    width: 11px;
+    height: 11px;
+ }
+.modal-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 0.86;
+text-align: center;
+letter-spacing: 0.03em;    
+color: #212121;
+margin-bottom: 12px;
+}
+.modal-close :hover {
+fill: #2196F3;
+}
+.modal-close :focus {
+    fill: #2196F3;
+        }
+
+.modul-field {
+    margin-bottom: 10px;
+    
+}
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+    font-size: 12px;
+   color: #000000;
+   padding-left: 47px;
+   outline: transparent;
+   &:focus {
+    border: 1px solid #2196F3;
+    &:hover {
+        cursor: pointer;}
+}
+    &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.85;
+    letter-spacing: 0.01em;
+    color: #757575;
+ }
+}
+.input-wrap {
+    position: relative;
+    display: block;
+}
+.modul-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:17px ;
+    .modal-input:focus + & {
+        fill: #2196F3;
+        border-color: #2196F3;
+    }
+}
+
+.modul-lable-text {
+    font-weight: 400;
+font-size: 12px;
+line-height: 0.85;
+letter-spacing: 0.01em;
+color: #757575;
+margin-bottom: 4px;
+display: block;
+
+}
+
+.modal-comment {
+    width: 100%;
+    height: 120px;
+    font-weight: 400;
+    letter-spacing: 0.01em;   
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: transparent;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    &:focus{
+        border: 1px solid #2196F3;
+    }
+    &:hover {
+        cursor: pointer;}
+}
+
+
+.check-text {
+    font-weight: 400;
+font-size: 14px;
+line-height: 0.58;
+letter-spacing: 0.05em;
+
+color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     span {
+        width: 16px;
+        height: 15px;
+        border: 2px solid #212121;
+        border-radius: 2px;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+    }
+    .input-check:checked + & span {
+        background-color: #2196F3;
+        border-color: transparent;
+        fill: #fff;
+    }
+    .input-check:focus + & span {
+        border-color: #2196F3;
+        
+    }
+}
+
+.href-check {
+
+letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration-line: underline;
+}
+.modal-botn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modul-fields {
+    margin-top: 20px;
+}
+.modal-botom {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.53px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    margin-top: 30px;
+}

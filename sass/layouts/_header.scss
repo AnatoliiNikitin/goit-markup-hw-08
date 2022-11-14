@@ -1,0 +1,116 @@
+.header {
+            
+    border-bottom: 1px solid #ECECEC;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    
+    gap: 50px;
+}
+.header__contact {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+    &:hover{
+    color: #2196F3;
+    }
+}
+
+.navigation__logo {
+font-family: 'Raleway',sans-serif; 
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #2196F3;
+margin-right: 93px;
+padding-top: 24px;
+padding-bottom: 25px;
+display: block;
+}
+.logo-color {
+color:  #000000;
+}
+.menu__link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+padding-top: 24px;
+padding-bottom: 25px;
+color: var(--top-color);
+display: block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+color: dodgerblue;
+}
+}
+
+
+.menu__list .link.current {
+color: dodgerblue;
+}
+.navigation .current {
+position: relative;
+}
+
+.current:after{
+content: '';
+position: absolute;
+bottom: -8.5px;
+left: 0;
+width: 100%;
+height: 4px;
+background: #2196F3;
+border-radius: 2px;
+}
+
+.contact__tel {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-color);
+display: flex;
+align-items: center;
+gap: 10px;
+padding-top: 24px;
+padding-bottom: 25px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover ,
+&:focus {
+    color: dodgerblue;
+    }
+}
+.contact__mail {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-color);
+display: flex;
+align-items: center;
+gap: 10px;
+padding-top: 24px;
+    padding-bottom: 25px;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+&:hover{
+color: dodgerblue;
+}
+}
+.contact__icon {
+
+fill: currentColor;
+}

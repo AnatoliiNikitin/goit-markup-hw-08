@@ -1,0 +1,35 @@
+.peculiarities {
+    padding: 94px 0px;
+}
+.benefits {
+    display: flex;
+    gap: 30px;
+}
+.benefits__iten {
+    width: 270px;
+}
+.benefits__title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--top-color);
+margin-bottom: 10px;
+margin-top: 30px;
+}
+.benefits__link {
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefits__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    }
