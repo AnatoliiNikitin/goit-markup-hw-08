@@ -23,6 +23,8 @@ a {
 }
 
 img {
+  min-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -430,6 +432,8 @@ li {
 .container-client {
   padding-top: 60px;
   padding-bottom: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @media screen and (min-width: 1200px) {
   .container-client {
