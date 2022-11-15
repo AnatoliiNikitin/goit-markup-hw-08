@@ -1,10 +1,18 @@
 .about {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #F5F4FA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+        }
 }
 .about-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     align-items: center;
 }
@@ -14,7 +22,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
      0px 1px 1px rgba(0, 0, 0, 0.14), 
      0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+     @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
+    }
 
 .about-soc-list {
     display: flex;

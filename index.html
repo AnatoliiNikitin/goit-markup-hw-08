@@ -61,14 +61,14 @@
       </div>
     </header> -->
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-text">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />ВАШОГО БІЗНЕСУ</h1>
           <button class="hero-botton" data-modal-open type="button">
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="peculiarities">
         <div class="container peculiarities__conteiner">
           <h2 hidden>Особливості</h2>
@@ -154,17 +154,30 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="about">
+      <section class="about">
         <div class="container container-about">
           <h2 class="about-title">Наша команда</h2>
           <ul class="about-list">
             <li class="about-iten">
-              <img
-                src="./images/img-5.jpg"
-                alt="Працівник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                    srcset="./images/img-1-1x.jpg 1x,
+                        ./images/img-1-2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                <source 
+                    srcset="./images/img-1-tab-min.jpg,
+                    ./images/img-1-tab-2x-min.jpg 2x" 
+                    media="(min-width: 768px)">
+                <source 
+                    srcset="./images/img-1-mob-min.jpg,
+                    ./images/img-1-mob-2x-min.jpg 2x" 
+                    media="(min-width: 320px)">
+
+            <img
+                src="./images/team/igor-mobile.jpg" 
+                alt="Ігор Дем'яненко"
+                width="100%"> 
+            </picture>
               <div class="about-iten-container">
                 <h3 class="about-iten-title">Ігор Дем'яненко</h3>
                 <span class="about-text">Product Designer</span>
@@ -207,12 +220,25 @@
               </div>
             </li>
             <li class="about-iten">
-              <img
-                src="./images/img-6.jpg"
-                alt="Працівник"
-                width="270"
-                height="260"
-              />
+           <picture>
+            <source
+                    srcset="./images/img-2.jpg 1x,
+                        ./images/img-2-2x-min.jpg 2x"
+                    media="(min-width: 1200px)">
+                <source 
+                    srcset="./images/img-2-tab-min.jpg 1x,
+                    ./images/img-2-tab-2x-min.jpg 2x" 
+                    media="(min-width: 768px)">
+                <source 
+                    srcset="./images/img-2-mob-min.jpg 1x,
+                    ./images/img-2mob-2x-min.jpg 2x" 
+                    media="(min-width: 320px)">
+                <img
+                  src="./images/img-6.jpg"
+                  alt="Ольга Рєпіна"
+                  width="100%"
+                />
+           </picture>
               <div class="about-iten-container">
                 <h3 class="about-iten-title">Ольга Рєпіна</h3>
                 <span class="about-text">Frontend Developer</span>
@@ -255,12 +281,27 @@
               </div>
             </li>
             <li class="about-iten">
-              <img
-                src="./images/img-7.jpg"
-                alt="Працівник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                    srcset="./images/img-3-1x.jpg 1x,
+                    ./images/img-3-2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                <source 
+                    srcset="./images/img-3-tab-min.jpg,
+                    ./images/img-3-tab-2x-min.jpg 2x" 
+                    media="(min-width: 768px)">
+                <source 
+                    srcset="./images/img-3-mob-min.jpg,
+                    ./images/img-3-mob-2x-min.jpg 2x" 
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/img-7.jpg"
+                    alt="Микола Тарасов"
+                  
+                    />
+            </picture>
+
               <div class="about-iten-container">
                 <h3 class="about-iten-title">Микола Тарасов</h3>
                 <span class="about-text">Marketing</span>
@@ -303,12 +344,25 @@
               </div>
             </li>
             <li class="about-iten">
-              <img
-                src="./images/img-8.jpg"
-                alt="Працівник"
-                width="270"
-                height="260"
-              />
+           <picture>
+            <source
+                    srcset="./images/img-4-1x.jpg 1x,
+                        ./images/img-4-2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                <source 
+                    srcset="./images/img-4-tab-min.jpg 1x,
+                    ./images/img-4-tab-2x-min.jpg 2x" 
+                    media="(min-width: 768px)">
+                <source 
+                    srcset="./images/img-4-mob-min.jpg 1x,
+                    ./images/img-4-mob-2x-min.jpg 2x" 
+                    media="(min-width: 320px)">
+                <img
+                  src="./images/img-8.jpg"
+                  alt="Михайло Єрмаков"
+                 
+                />
+           </picture>
               <div class="about-iten-container">
                 <h3 class="about-iten-title">Михайло Єрмаков</h3>
                 <span class="about-text">UI Designer</span>
@@ -352,7 +406,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="client">
         <div class="container container-client">
           <h2 class="client-tetle">Постійні клієнти</h2>
