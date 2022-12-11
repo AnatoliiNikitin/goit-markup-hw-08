@@ -1267,7 +1267,7 @@ li {
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   padding: 40px;
   background: #FFFFFF;
@@ -1287,16 +1287,6 @@ li {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(50%, 50%) scale(0);
           transform: translate(50%, 50%) scale(0);
-}
-@media screen and (max-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 450px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
