@@ -23,7 +23,7 @@ a {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -250,6 +250,8 @@ li {
   .contact__tel {
     padding-top: 5px;
     padding-bottom: 21px;
+    font-size: 12px;
+    line-height: 0.85;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -568,6 +570,16 @@ li {
 .peculiarities {
   padding: 94px 0px;
 }
+@media screen and (min-width: 480px) {
+  .peculiarities {
+    padding: 60px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .peculiarities {
+    padding: 60px 0px;
+  }
+}
 
 .benefits {
   display: -webkit-box;
@@ -601,6 +613,7 @@ li {
   color: var(--top-color);
   margin-bottom: 10px;
   margin-top: 30px;
+  text-align: center;
 }
 
 .benefits__link {
@@ -732,12 +745,26 @@ li {
 
 .about-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.6;
+  font-size: 28px;
+  line-height: 0.84;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--top-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .about-title {
+    font-size: 36px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-title {
+    font-size: 28px;
+    line-height: 0.84;
+    margin-bottom: 30px;
+  }
 }
 
 .about-iten-title {
@@ -783,12 +810,19 @@ li {
 
 .client-tetle {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.6;
+  font-size: 28px;
+  line-height: 0.84;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--top-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .client-tetle {
+    font-size: 36px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
 }
 
 .client-list {
@@ -1250,6 +1284,16 @@ li {
   -webkit-transform: translate(50%, 50%) scale(0);
           transform: translate(50%, 50%) scale(0);
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    max-width: 450px;
+  }
+}
 
 .modal-btn {
   width: 30px;
@@ -1403,8 +1447,8 @@ li {
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 0.58;
+  font-size: 12px;
+  line-height: 0.85px;
   letter-spacing: 0.05em;
   color: #757575;
   display: -webkit-box;
@@ -1441,6 +1485,12 @@ li {
 }
 .input-check:focus + .check-text span {
   border-color: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 0.58;
+  }
 }
 
 .href-check {
